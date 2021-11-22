@@ -19,10 +19,13 @@ class House:
         return year
     def location(self):
         return location
-    def current_val():
-        current = price * (1 + .08)^2021 - year
+    def current():
+        value = price * (1 + .08)^2021 - year
+        return value
 
     def __str__(self):
         print('House Information: \nYear Built: {}\nPurchase Price: {}\nCurrent Value: {}\nLocation: {}'.format(year, price, current, location))
 
+house = House(year, price, location)
 
+print(house)
